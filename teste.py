@@ -1,30 +1,9 @@
-def teste (vet,x,y):
+vet=[]
+cont=0
+for i in range(0,4):
+    vet.append(input('Numero: '))
 
-    print ("vet=", vet, "x=", x, "y=",y)
-
-    vet[2]=4
-    x = x+1
-    y = y+1
-
-    print ("vet=", vet, "x=", x, "y=",y)
-    
-#prog principal 
-vetor = [1,2,3]
-a = 0
-b = 0
-teste(vetor,a,b)
-
-print ("vetor=", vet, "x=", x, "y=",y)
-
-
-
-#(anotação de aula)
-
-#n = int(input("Entre com a quantidade de alunos que há na turma: "))
-
-#nota=[0.0]*n #o vet se inicia com zero, o (n) a cada entrada preenche
-#um lugar do zero do zero.
-
-
-
-
+for i in range(0,4):
+    if vet[i]%2==0:
+        cont=cont+1
+print('Quantidade de numeros pares no vetor:',cont)
